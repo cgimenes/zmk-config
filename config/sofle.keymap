@@ -27,6 +27,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Escape {
+            bindings = <&kp ESC>;
+            key-positions = <31 32>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
