@@ -97,7 +97,9 @@
                     &kp LALT  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_SHIFT  &mo 1         &mo 2  &kp SPACE  &kp RCTRL  &kp RGUI   &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
@@ -125,10 +127,10 @@
         adjust_layer {
             display-name = "adjust";
             bindings = <
-&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                    &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4     &bt BT_CLR
+&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                    &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4     &trans
 &rgb_ug RGB_TOG  &kp F1           &kp F2           &kp F3           &kp F4           &kp F5                             &kp F6          &kp F7          &kp F8        &kp F9           &kp F10          &kp DEL
 &rgb_ug RGB_EFF  &kp F11          &kp F12          &trans           &mkp MB1         &mkp MB2                           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans           &trans
-&bootloader      &trans           &trans           &trans           &mkp MB3         &trans           &trans    &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp PRINTSCREEN  &trans
+&bootloader      &trans           &trans           &trans           &mkp MB3         &trans           &trans    &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp PRINTSCREEN  &bt BT_CLR
                                   &trans           &trans           &trans           &trans           &trans    &trans  &trans          &trans          &trans        &trans
             >;
         };
