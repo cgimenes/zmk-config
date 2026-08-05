@@ -15,6 +15,8 @@
 #define RAISE 2
 #define ADJUST 3
 
+&lt { tapping-term-ms = <150>; };
+
 / {
     // Activate ADJUST layer by pressing raise and lower
 
@@ -140,7 +142,7 @@
             >;
         };
 
-        numpad {
+        numpad_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans     &trans  &trans  &trans         &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &kp KP_NUMLOCK  &kp N7     &kp N8  &kp N9  &kp MINUS      &trans
@@ -150,7 +152,7 @@
             >;
         };
 
-        wm {
+        wm_layer {
             bindings = <
 &trans  &trans                &trans                &trans                &trans                &trans                            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LG(LS(NUMBER_1))  &kp LS(LG(NUMBER_2))  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))                    &trans  &trans  &trans  &trans  &trans  &trans
