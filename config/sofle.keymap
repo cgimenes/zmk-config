@@ -54,7 +54,7 @@
         };
 
         wm {
-            bindings = <&mo 5>;
+            bindings = <&sl 5>;
             key-positions = <26 27>;
         };
     };
